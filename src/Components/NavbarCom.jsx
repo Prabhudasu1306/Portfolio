@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 
 import About from './About';
@@ -7,16 +7,20 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Header from './Header';
 import Footer from './Footer';
-import './NavbarCom.css';
 import Education from './Education';
 import Certifications from './Certifications';
+import './NavbarCom.css';
 
 const NavbarCom = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Default is dark-mode
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+    document.body.classList.toggle('light-mode', !darkMode);
+  }, [darkMode]);
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode', !darkMode);
   };
 
   return (
@@ -30,7 +34,7 @@ const NavbarCom = () => {
           <NavLink to="/projects" className="link">Projects</NavLink>
           <NavLink to="/skills" className="link">Skills</NavLink>
           <NavLink to="/education" className="link">Education</NavLink>
-          <NavLink to="/certifications" className="link">Certifications</NavLink> {/* Fixed the link */}
+          <NavLink to="/certifications" className="link">Certifications</NavLink>
         </div>
         <button className="theme-toggle" onClick={toggleTheme}>
           {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
@@ -43,7 +47,7 @@ const NavbarCom = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/education" element={<Education />} />
-        <Route path="/certifications" element={<Certifications />} /> {/* Fixed the route */}
+        <Route path="/certifications" element={<Certifications />} />
       </Routes>
 
       <Footer />

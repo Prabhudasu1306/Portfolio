@@ -45,6 +45,26 @@ const Skills = () => {
             <li>MongoDB (NoSQL)</li>
             <li>Oracle</li>
             <li>Vector DBs (Faiss)</li>
+            <li>Azure SQL Database</li>
+          </ul>
+        </div>
+
+        <div className="skill-category">
+          <h2>Big Data & Spark</h2>
+          <ul>
+            <li>Apache Spark</li>
+            <li>Azure Databricks</li>
+          </ul>
+        </div>
+
+        <div className="skill-category">
+          <h2>Automation & Testing</h2>
+          <ul>
+            <li>Selenium (Java & Python)</li>
+            <li>TestNG</li>
+            <li>PyTest</li>
+            <li>REST Assured</li>
+            <li>Postman</li>
           </ul>
         </div>
 
@@ -53,7 +73,7 @@ const Skills = () => {
           <ul>
             <li>GPT (ChatGPT, GPT-4)</li>
             <li>BERT</li>
-            <li>T5 (Text-to-Text Transfer Transformer)</li>
+            <li>T5</li>
             <li>LangChain</li>
             <li>Stable Diffusion</li>
           </ul>
@@ -62,8 +82,8 @@ const Skills = () => {
         <div className="skill-category">
           <h2>Fine-Tuning Techniques</h2>
           <ul>
-            <li>LoRA (Low-Rank Adaptation)</li>
-            <li>QLoRA (Quantized LoRA)</li>
+            <li>LoRA</li>
+            <li>QLoRA</li>
             <li>Parameter-efficient tuning</li>
           </ul>
         </div>
@@ -93,15 +113,6 @@ const Skills = () => {
         </div>
 
         <div className="skill-category">
-          <h2>API & Testing</h2>
-          <ul>
-            <li>Postman</li>
-          
-            <li>Selenium</li>
-          </ul>
-        </div>
-
-        <div className="skill-category">
           <h2>Build & Deployment</h2>
           <ul>
             <li>Maven</li>
@@ -114,7 +125,22 @@ const Skills = () => {
           <h2>Cloud Platforms</h2>
           <ul>
             <li>AWS</li>
-                      </ul>
+            <li>Azure</li>
+          </ul>
+        </div>
+
+        <div className="skill-category">
+          <h2>Azure Services</h2>
+          <ul>
+            <li>Azure DevOps</li>
+            <li>Azure SQL Database</li>
+            <li>Azure Databricks</li>
+            <li>Azure Active Directory</li>
+            <li>Azure Resource Manager</li>
+            <li>Azure DevTest Labs</li>
+            <li>Microsoft Planner</li>
+            <li>Microsoft Project</li>
+          </ul>
         </div>
 
         <div className="skill-category">
@@ -122,7 +148,6 @@ const Skills = () => {
           <ul>
             <li>Gradio</li>
             <li>Streamlit</li>
-            
           </ul>
         </div>
 
@@ -138,6 +163,9 @@ const Skills = () => {
           <h2>Project Management</h2>
           <ul>
             <li>Jira</li>
+            <li>Azure DevOps Boards</li>
+            <li>Microsoft Project</li>
+            <li>Microsoft Planner</li>
           </ul>
         </div>
 

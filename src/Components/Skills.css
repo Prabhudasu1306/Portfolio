@@ -1,50 +1,74 @@
 .skills-container {
-    text-align: center;
-    padding: 50px;
-    max-width: 900px;
-    margin: auto;
+  background-color: #2d3a4b;
+  color: #e0f0ff;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.skill-category {
+  background: #3b4b61;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(255, 140, 66, 0.2);
+}
+
+.skill-category h2 {
+  font-size: 1.4rem;
+  color: #38bdf8; 
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4c5a6a;
+  padding-bottom: 5px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skill-category li {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #cbd5e1;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.skill-category li::before {
+  content: "•";
+  color: #38bdf8;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 40px 10px;
   }
-  
+
   .section-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #ffcc00;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .skill-category {
-    background: #333;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-  }
-  
-  .skill-category h2 {
-    font-size: 22px;
-    color: #ffcc00;
-    margin-bottom: 10px;
-  }
-  
-  .skill-category ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .skill-category li {
-    font-size: 18px;
-    color: white;
-    margin: 5px 0;
-  }
-  
-  @media (max-width: 768px) {
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

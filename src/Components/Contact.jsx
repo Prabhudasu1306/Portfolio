@@ -1,33 +1,44 @@
 import React from 'react';
 import './Contact.css';
+import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <h1 className="contact-title">Get in Touch</h1>
-      <p className="contact-subtitle">I'd love to hear from you! Feel free to reach out.</p>
+    <section className="contact-container">
+      <div className="contact-header">
+        <h1 className="contact-title">Get in Touch</h1>
+        <p className="contact-subtitle">
+          I'd love to connect — whether it's a collaboration, opportunity, or just a friendly hello!
+        </p>
+      </div>
 
-      <div className="contact-info">
+      <div className="contact-grid">
         <div className="contact-card">
+          <FiPhoneCall className="contact-icon" />
           <h2>Phone</h2>
-          <p><a href="tel:+919989123680">+91 99891 23680</a></p>
+          <a href="tel:+919989123680" className="contact-link">
+            +91 99891 23680
+          </a>
         </div>
 
         <div className="contact-card">
+          <FiMail className="contact-icon" />
           <h2>Email</h2>
-          <p>
-            <a href="mailto:prabhudasuparusu1306@gmail.com?subject=Inquiry&body=Hello, I would like to ask about...">
-              prabhudasuparusu1306@gmail.com
-            </a>
-          </p>
+          <a
+            href="mailto:prabhudasuparusu1306@gmail.com?subject=Inquiry&body=Hello, I would like to ask about..."
+            className="contact-link"
+          >
+            prabhudasuparusu1306@gmail.com
+          </a>
         </div>
 
         <div className="contact-card">
+          <FiMapPin className="contact-icon" />
           <h2>Location</h2>
-          <p>123 Main Street, Madhapur, Hyderabad, India</p>
+          <p className="contact-location">Madhapur, Hyderabad, India</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
