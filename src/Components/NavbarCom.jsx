@@ -10,6 +10,7 @@ import Footer from './Footer';
 import Education from './Education';
 import Certifications from './Certifications';
 import './NavbarCom.css';
+import Rewards from './Rewards';
 
 const NavbarCom = () => {
   const [darkMode, setDarkMode] = useState(true); // Default is dark-mode
@@ -35,6 +36,7 @@ const NavbarCom = () => {
           <NavLink to="/skills" className="link">Skills</NavLink>
           <NavLink to="/education" className="link">Education</NavLink>
           <NavLink to="/certifications" className="link">Certifications</NavLink>
+          <NavLink to="/rewards" className="link">Rewards</NavLink>
         </div>
         <button className="theme-toggle" onClick={toggleTheme}>
           {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
@@ -48,6 +50,7 @@ const NavbarCom = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/education" element={<Education />} />
         <Route path="/certifications" element={<Certifications />} />
+        <Route path="/rewards" element={<Rewards />} />
       </Routes>
 
       <Footer />
