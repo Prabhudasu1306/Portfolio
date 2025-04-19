@@ -9,7 +9,7 @@ const Rewards = () => {
         <li>🏅 Top 3% percentile on Kaggle in Data Science competitions</li>
         <li>🤝 Volunteered as a mentor for underprivileged students in coding bootcamps</li>
         <li>🎓 Completed NASSCOM Certified Full Stack Data Science and AI course</li>
-        <li>🏆 Finalist in Inter-College Hackathon 2024</li>
+        
         <li>📢 Presented AI project on lung cancer prediction at college tech fest</li>
       </ul>
     </div>
